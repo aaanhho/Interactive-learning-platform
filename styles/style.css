@@ -1,0 +1,365 @@
+/* Author: Anh Ho */
+/* stylesheet */
+
+body {
+    background: url(images/background.png) center;
+}
+
+* {
+    text-align: justify;
+}
+
+/* header */
+
+h1 {
+    text-align: center;
+    margin: auto !important;
+}
+
+.nav {
+    /*override the default color of navbar of materialize*/
+    background-color: transparent !important;
+}
+
+a {
+    color: white;
+}
+
+nav a {
+    /*navigation bar */
+    display: block;
+    margin: 0 1em;
+    margin: 1em 1em;
+    font-size: 1.5em;
+    background-color: #b3e5fc;
+    text-align: center !important;
+    border-radius: 15px;
+    color: black;
+}
+
+nav a:hover {
+    background-color: #e1f5fe;
+}
+
+h1 {
+    text-align: center;
+    margin: auto !important;
+    padding: 25px 0px 25px 0px;
+    align-items: center;
+    font: 4.2rem normal monospace bold !important;
+}
+
+/* content */
+
+.container {
+    align-items: center;
+    justify-content: center;
+}
+
+.white {
+    /*light blue background above background img*/
+    background-color: #b3e5fc !important;
+    border-radius: 25px;
+    padding: 30px 0px 70px 0px;
+    margin-top: 50px;
+    border: 1px solid #b3e5fc;
+    width: 70%;
+    opacity: 90%;
+}
+
+#margin {
+    /*margin fo light blue background*/
+    width: 80%;
+}
+
+h2 {
+    text-align: center;
+    margin: auto !important;
+    font-weight: bold;
+}
+
+h4 {
+    font-weight: bold;
+    text-align: left !important;
+}
+
+.padding {
+    /*padding for minor info*/
+    padding: 0px 40px 0px 40px;
+}
+
+dl {
+    font-size: 1.2em;
+    padding-right: 30px;
+}
+
+p,
+ul {
+    font-size: 1.4em;
+}
+
+.font {
+    font-size: 1.2rem;
+}
+
+figcaption {
+    font-size: 1.2rem;
+    text-align: center;
+    padding-top: 10px;
+}
+
+li {
+    text-align: left !important;
+}
+
+.padding1 {
+    /*padding for list*/
+    padding: 0px 100px 0px 100px;
+    font-size: 1.2em !important;
+}
+
+table {
+    border: 1px solid black;
+}
+
+th {
+    border: 1px solid black;
+    background: white;
+}
+
+td {
+    border: 1px solid black;
+    background: #e1f5fe;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    text-align: center;
+    font-size: 1.4em;
+}
+
+aside {
+    width: 30%;
+    float: right;
+    border: 1px solid black;
+    font-size: 1rem !important;
+    text-align: left !important;
+}
+
+
+.figure {
+    margin: 0px !important;
+}
+
+#img {
+    /*image in index + topic pages*/
+    width: 70%;
+    height: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.text-align {
+    /*left-justify for quiz form*/
+    text-align: left !important;
+}
+
+label {
+    font-size: 1.2rem;
+    color: black;
+}
+
+input {
+    opacity: 1 !important;
+    font-size: 1.2rem;
+    position: relative !important;
+    pointer-events: fill !important;
+}
+
+select {
+    display: list-item !important;
+    font-size: 1.2rem;
+}
+
+section {
+    padding-top: 5px;
+}
+
+.caption {
+    text-align: right !important;
+    padding-bottom: 10px;
+}
+
+.display {
+    /*aside and image*/
+    display: flex !important;
+}
+
+legend {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.a {
+    color: blue;
+    text-decoration: underline;
+}
+
+/* footer */
+
+footer {
+    padding: 2em 0 2em;
+    font-size: 1.2em;
+    text-align: center;
+    color: white;
+    font-style: italic;
+}
+
+
+/* flip image */
+
+.imgindex {
+    width: 500px;
+    height: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.flip-box {
+    background-color: transparent;
+    width: 90vh;
+    height: 90vh;
+    border: 1px solid transparent;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front,
+.flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+}
+
+/* Style the back side */
+.flip-box-back {
+    transform: rotateY(180deg);
+}
+
+ol li::marker {
+    font-size: 1.7em;
+    font-weight: bold;
+}
+
+@media only screen and (max-width: 1000px) {
+    .white {
+        margin-top: 400px;
+    }
+
+    h2 {
+        font-size: 3.2rem;
+    }
+
+    h4 {
+        font-size: 1.8rem;
+    }
+
+    dl {
+        font-size: 1em;
+    }
+
+    p,
+    ul {
+        font-size: 1.2em;
+    }
+
+    tr {
+        font-size: 0.8em;
+        ;
+    }
+
+    h5 {
+        font-size: 1.2rem;
+    }
+
+    nav a {
+        font-size: 1.8em;
+    }
+
+    .imgindex {
+        width: 50vh;
+        height: 50vh;
+    }
+
+    .flip-box {
+        width: 50vh;
+        height: 50vh;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .white {
+        margin-top: 380px;
+    }
+
+    .imgindex {
+        width: 32vh;
+        height: 32vh;
+    }
+
+    .flip-box {
+        width: 32vh;
+        height: 32vh;
+    }
+
+    tr {
+        font-size: 0.6em;
+    }
+}
+
+#retake {
+    display: block;
+    padding: 0.8em 0 0.8em 0;
+    font-size: 1em;
+    background-color: white;
+    text-align: center !important;
+    border-radius: 15px;
+    color: black;
+}
+
+h3{
+    text-align: center;
+    font-size: 1.5em;
+}
+
+#canvas{
+    width: 100% !important; 
+    height: 100% !important;
+}
